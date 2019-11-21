@@ -10,8 +10,6 @@ const Ground = () => {
     strokeWidth: '3px',
   };
 
-  const skyAndGroundWidth = 5000;
-
   return (
     <g id='ground'>
       <rect
