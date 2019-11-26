@@ -34,6 +34,15 @@ const CannonBase = (props) => {
         d={pathFromBezierCurve(cubicBezierCurve)
         }
         />
+      <line 
+        x1={-halfBase}
+        y1={height}
+        x2={halfBase}
+        y2={height}
+        style={cannonBaseStyle}
+        />
     </g>
-  )
-}
+  );
+};
+
+export default CannonBase;
