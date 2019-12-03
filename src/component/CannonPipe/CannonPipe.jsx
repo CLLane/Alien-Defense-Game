@@ -33,5 +33,20 @@ const CannonPipe = props => {
     },
   };
 
-  
-}
+  return (
+    <g transform={transform}>
+      <path 
+        style={cannonPipeStyle}
+        d={pathFeromBezierCurve(cubicBezierCurve)}
+        />
+        <line 
+          x1={-halfMuzzle}
+          y1={-yBasis}
+          x2={halfMuzzle}
+          y2={-yBasis}
+          style={cannonPipeStyle}
+          />
+    </g>
+  );
+};
+
