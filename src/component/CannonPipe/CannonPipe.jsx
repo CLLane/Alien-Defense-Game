@@ -50,3 +50,8 @@ const CannonPipe = props => {
   );
 };
 
+CannonPipe.propTypes = {
+  rotation: PropTypes.number.isRequired,
+};
+
+export default CannonPipe;
