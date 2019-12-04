@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { pathFromBezierCurve } from '../utils/formulas';
+import { pathFromBezierCurve } from '../../utils/formulas';
 
 const CannonPipe = props => {
   const cannonPipeStyle = {
@@ -15,11 +15,11 @@ const CannonPipe = props => {
   const yBasis = 70;
 
   const cubicBezierCurve = {
-    intitialAxis: {
+    initialAxis: {
       x: -halfMuzzle,
       y: -yBasis,
     },
-    endingControlPoint: {
+    initialControlPoint: {
       x: -40,
       y: height * 1.7,
     },
@@ -37,7 +37,7 @@ const CannonPipe = props => {
     <g transform={transform}>
       <path 
         style={cannonPipeStyle}
-        d={pathFeromBezierCurve(cubicBezierCurve)}
+        d={pathFromBezierCurve(cubicBezierCurve)}
         />
         <line 
           x1={-halfMuzzle}

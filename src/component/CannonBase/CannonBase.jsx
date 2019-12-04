@@ -14,7 +14,11 @@ const CannonBase = (props) => {
   const negativeHeight = height * -1;
 
   const cubicBezierCurve = {
-    intitialAxis: {
+    initialAxis: {
+      x: -halfBase,
+      y: height,
+    },
+    initialControlPoint: {
       x: 20,
       y: negativeHeight,
     },

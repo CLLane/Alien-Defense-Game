@@ -1,8 +1,8 @@
 import React from 'react';
 import Sky from '../Sky/Sky.jsx';
 import Ground from '../Ground/Ground';
-import CannonBase from './CannonBase';
-import CannonPipe from './CannonPipe';
+import CannonBase from '../CannonBase/CannonBase.jsx';
+import CannonPipe from '../CannonPipe/CannonPipe.jsx';
 
 const Canvas = () => {
   const viewBox = [window.innerWidth / -2, 100 - window.innerHeight, window.innerWidth, window.innerHeight];
@@ -14,8 +14,8 @@ const Canvas = () => {
     >
       <Sky />
       <Ground />
-      <CannonBase/>
-      <CannonPipe/>
+      <CannonPipe rotation={45}/>
+      <CannonBase />
     </svg>
   );
 };

@@ -1,6 +1,8 @@
 export const pathFromBezierCurve = (cubicBezierCurve) => {
+  console.log(cubicBezierCurve)
   const {
-    initialAxis, intitialConstrolPoint, endingControlPoint, endingAxis, } = cubicBezierCurve
+    initialAxis, initialControlPoint, endingControlPoint, endingAxis, } = cubicBezierCurve
+    
 return ` 
     M${initialAxis.x} ${initialAxis.y}
     c ${initialControlPoint.x} ${initialControlPoint.y}
