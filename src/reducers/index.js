@@ -1,5 +1,5 @@
 import { MOVE_OBJECTS } from '../actions';
-import moveObjects from '../reducers';
+import moveObjects from '../reducers/moveObjects';
 
 const initialState = {
   angle: 45,
