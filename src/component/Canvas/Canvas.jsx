@@ -5,7 +5,7 @@ import CannonBase from '../CannonBase/CannonBase.jsx';
 import CannonPipe from '../CannonPipe/CannonPipe.jsx';
 import PropTypes from 'prop-types';
 
-const Canvas = () => {
+const Canvas = (props) => {
   const viewBox = [window.innerWidth / -2, 100 - window.innerHeight, window.innerWidth, window.innerHeight];
   return (
     <svg
