@@ -3,6 +3,7 @@ import Sky from '../Sky/Sky.jsx';
 import Ground from '../Ground/Ground';
 import CannonBase from '../CannonBase/CannonBase.jsx';
 import CannonPipe from '../CannonPipe/CannonPipe.jsx';
+import CannonBall from '../CannonBall/CannonBall.jsx'
 import PropTypes from 'prop-types';
 
 const Canvas = (props) => {
@@ -18,6 +19,7 @@ const Canvas = (props) => {
       <Ground />
       <CannonPipe rotation={props.angle}/>
       <CannonBase />
+      <CannonBall position={{x: 0, y: -100}} />
     </svg>
   );
 };
