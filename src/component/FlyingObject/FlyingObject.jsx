@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import FlyingObjectBase from '../FlyingObjectBase';
-import FlyingObjectTop from '../FlyingObjectTop';
+import FlyingObjectBase from '../FlyingObjectBase/FlyingObjectBase';
+import FlyingObjectTop from '../FlyingObjectTop/FlyingObjectTop';
 
 const FlyingObject = props => (
   <g>

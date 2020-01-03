@@ -1,6 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { pathFromBezierCurve } from '../utils/formulas';
+import propTypes from 'prop-types';
+import { pathFromBezierCurve } from '../../utils/formulas';
 
 const FlyingObjectTop = props => {
   const style = {
@@ -39,10 +39,10 @@ const FlyingObjectTop = props => {
   );
 };
 
-FlyingObjectTop.PropTypes = {
-  position: PropTypes.shape({
-    x: PropTypes.number.isRequired,
-    y: PropTypes.number.isRequired
+FlyingObjectTop.propTypes = {
+  position: propTypes.shape({
+    x: propTypes.number.isRequired,
+    y: propTypes.number.isRequired
   }).isRequired,
 };
 
