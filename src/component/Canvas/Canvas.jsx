@@ -5,6 +5,7 @@ import CannonBase from '../CannonBase/CannonBase.jsx';
 import CannonPipe from '../CannonPipe/CannonPipe.jsx';
 import CannonBall from '../CannonBall/CannonBall.jsx'
 import CurrentScore from '../CurrentScore/CurrentScore'
+import FlyingObject from '../FlyingObject/FlyingObject'
 import PropTypes from 'prop-types';
 
 const Canvas = (props) => {
@@ -27,6 +28,8 @@ const Canvas = (props) => {
       <CannonBase />
       <CannonBall position={{x: 0, y: -100}} />
       <CurrentScore score={15} />
+      <FlyingObject position={{x: -150, y: -300}} />
+      <FlyingObject position={{x: 150, y: -300}} />
     </svg>
   );
 };
