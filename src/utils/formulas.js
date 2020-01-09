@@ -1,5 +1,5 @@
 export const pathFromBezierCurve = cubicBezierCurve => {
-  console.log(cubicBezierCurve);
+  // console.log("cubicBezier", cubicBezierCurve);
   const {
     initialAxis,
     initialControlPoint,
@@ -28,12 +28,12 @@ export const calculateAngle = (x1, y1, x2, y2) => {
   return radiansToDegrees(Math.atan(quotient)) * -1;
 };
 
-export const getCanvasPosition = (event) => {
-  const svg = document.getElementById('aliens-go-home-canvas');
+export const getCanvasPosition = event => {
+  const svg = document.getElementById("aliens-go-home-canvas");
   const point = svg.createSVGPoint();
 
   point.x = event.clientX;
   point.y = event.clientY;
   const { x, y } = point.matrixTransform(svg.getScreenCTM().inverse());
-  return {x,y}
-}
+  return { x, y };
+};
